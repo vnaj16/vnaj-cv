@@ -18,6 +18,22 @@ function App() {
           Contact Me
         </button>
       </div>
+      <div className="card">
+        <button id="pdf" onClick={() => {
+          document.getElementById('pdf').onclick = function () {
+            var cv = document.getElementById('root');
+            var options = {
+              margin: 1,
+              filename: "vnaj.cv.pdf",
+              image: { type: "jpeg", quality: 0.98},
+              html2canvas: {scale: 2},
+              jsPDF: { unit: 'in', format: 'letter', orientation: "portrait"}
+            };
+    
+            html2pdf(cv, options);
+          };
+        }}>PDF</button>
+      </div>
     </div>
   )
 }
