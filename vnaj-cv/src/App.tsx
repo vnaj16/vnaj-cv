@@ -6,7 +6,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="App" style={{backgroundColor: 'red'}}>
+    <div className="App" style={{backgroundColor: '#242424'}}>
       <div>
         <a href="https://reactjs.org" target="_blank">
           <img src={vnaj_photo} className="logo react" alt="React logo" />
