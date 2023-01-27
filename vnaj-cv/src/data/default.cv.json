@@ -1,7 +1,8 @@
 {
     "PersonalInfo": {
         "Firstname": "Arthur",
-        "Lastname": "Valladares Nole"
+        "Lastname": "Valladares Nole",
+        "Degree": "Ingeniero de Sistemas de Información"
     },
     "ContactInfo": {
         "Telephone": "916319548",
@@ -9,5 +10,35 @@
         "Linkedin": "vnaj-peru",
         "Website": "vnaj16.github.io"
     },
-    "Profile": "Ingeniero de Sistemas de Información con formación en Universidad Peruana de Ciencias Aplicadas (UPC). Líder, responsable, autodidacta y de rápido aprendizaje. Apasionado por el Desarrollo de Sistemas, Automatización de Procesos, Integración de Sistemas, Cloud Computing y otras tecnologías."
+    "Profile": "Ingeniero de Sistemas de Información con formación en Universidad Peruana de Ciencias Aplicadas (UPC). Líder, responsable, autodidacta y de rápido aprendizaje. Apasionado por el Desarrollo de Sistemas, Automatización de Procesos, Integración de Sistemas, Cloud Computing y otras tecnologías.",
+    "Experience": [
+        {
+            "Company": "Belcorp",
+            "StartYear": 2021,
+            "FinishYear": 0,
+            "Description": "Actualmente....."
+        }
+    ],
+    "HardSkills": [
+        {
+            "Name": "C#",
+            "Level": "Advanced"
+        },
+        {
+            "Name": "Python",
+            "Level": "Advanced"
+        }
+    ],
+    "SoftSkills": [
+        "Liderazgo",
+        "autodidacta"
+    ],
+    "Studies": [
+        {
+            "Institution": "Universidad Peruana de Ciencias Aplicadas",
+            "StartDate": "2018",
+            "FinishDate": "2022",
+            "Subject": "Ingeniería de Sistemas de Información"
+        }
+    ]
 }

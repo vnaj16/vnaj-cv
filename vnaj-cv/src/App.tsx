@@ -1,9 +1,20 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import vnaj_photo from './assets/vnaj.jpg'
 import './App.css'
 
+function Fullname({Firstname, Lastname}) {
+  return <h1>{Firstname} {Lastname}</h1>
+}
+
 function App() {
-  const [count, setCount] = useState(0)
+  const [cvInfo, setCvInfo] = useState(null)
+
+  
+
+  useEffect(() => {
+    fetch('/src/data/default.cv.json').then(res => res.json())
+      .then(setCvInfo);
+  }, []);
 
   return (
     <div className="App" style={{backgroundColor: '#242424'}}>
@@ -12,7 +23,7 @@ function App() {
           <img src={vnaj_photo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>VNAJ</h1>
+      <Fullname {...cvInfo?.PersonalInfo}/>
       <div className="card">
         <button onClick={() => alert("Contacting...")}>
           Contact Me
