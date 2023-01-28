@@ -45,7 +45,7 @@ function Section({ Name }: SectionProps) {
         SECTION {Name}
       </Typography>
       <Typography sx={{ fontSize: 14 }}>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor lacus at mollis dictum. Morbi vestibulum nisi ex, vitae consectetur quam viverra eu. Maecenas quis risus lacus. Phasellus blandit sagittis erat sit amet mollis. Mauris imperdiet iaculis vehicula. Mauris non tempor risus. Donec vitae ornare ante. Morbi at lobortis mauris. Donec rutrum mattis est quis consectetur. Fusce tempor diam sed turpis tempor, sed interdum turpis ultricies. Mauris vel odio elementum, suscipit turpis ac, lobortis felis. Suspendisse efficitur varius diam eu euismod. Maecenas a commodo massa.
+      Loremx ipsum dolor sit amet, consectetur adipiscing elit. Donec tempor lacus at mollis dictum. Morbi vestibulum nisi ex, vitae consectetur quam viverra eu. Maecenas quis risus lacus. Phasellus blandit sagittis erat sit amet mollis. Mauris imperdiet iaculis vehicula. Mauris non tempor risus. Donec vitae ornare ante. Morbi at lobortis mauris. Donec rutrum mattis est quis consectetur. Fusce tempor diam sed turpis tempor, sed interdum turpis ultricies. Mauris vel odio elementum, suscipit turpis ac, lobortis felis. Suspendisse efficitur varius diam eu euismod. Maecenas a commodo massa.
       </Typography>
     </CardContent>
   </Card>
