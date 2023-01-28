@@ -4,18 +4,24 @@ import vnaj_photo from './assets/vnaj.jpg'
 import './App.css'
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 
+const Styles = {
+  Card: {
+    borderRadius: "0px", height: "100%"
+  }
+}
+
+//#region Fullname
 interface FullnameProps {
   Firstname?: string;
   Lastname?: string;
 }
 
 function Fullname({ Firstname, Lastname }: FullnameProps) {
-  return <Card variant="outlined" style={{borderRadius: "0px", height: "100%"}}>
+  return <Card variant="outlined" style={Styles.Card}>
     <CardContent>
       <a href="https://reactjs.org" target="_blank">
         <img src={vnaj_photo} className="logo react" alt="React logo" />
@@ -26,13 +32,14 @@ function Fullname({ Firstname, Lastname }: FullnameProps) {
     </CardContent>
   </Card>
 }
+//#endregion
 
 interface SectionProps {
   Name: string;
 }
 
 function Section({ Name }: SectionProps) {
-  return <Card variant="outlined" style={{borderRadius: "0px", height: "100%"}}>
+  return <Card variant="outlined" style={Styles.Card}>
     <CardContent>
       <Typography sx={{ fontSize: 32 }} variant="h1" color="#0081B4" gutterBottom>
         SECTION {Name}
@@ -44,10 +51,9 @@ function Section({ Name }: SectionProps) {
   </Card>
 }
 
+//#region Main
 function App() {
   const [cvInfo, setCvInfo] = useState(null)
-
-
 
   useEffect(() => {
     fetch('/src/data/default.cv.json').then(res => res.json())
@@ -105,5 +111,5 @@ function App() {
     </div>
   )
 }
-
+//#endregion
 export default App
